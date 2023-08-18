@@ -1,0 +1,48 @@
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.item{
+    background-color: rgba(142, 145, 144, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    height: 430px;
+}
+
+.item__img img{
+    width: 230px;
+    height: 310px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.item__content{
+    color: rgb(52, 51, 51);
+    display: flex;
+    flex-direction: column;
+}
+
+.item__content-category{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+.item__content-price{
+    font-weight: bold;
+    color: rgb(230, 35, 48);
+}
+
+.item__content-title{
+    font-weight: bold;
+    color: rgb(155, 204, 223);
+    text-align: center;
+}

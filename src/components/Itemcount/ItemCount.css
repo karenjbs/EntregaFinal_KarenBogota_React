@@ -1,0 +1,40 @@
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.item-count{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+span{
+    font-size: 16px;
+    padding: 8px;
+}
+
+.item-count__buttons button{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(155, 204, 223);
+    gap: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.item-count__add {
+    background-color: rgb(230, 35, 48);
+    border: none;
+    border-radius: 4px;
+    padding: 4px 9px 4px 9px;
+    color: white;
+}

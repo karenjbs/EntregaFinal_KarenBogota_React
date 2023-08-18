@@ -1,0 +1,44 @@
+*{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.container{
+    height: 60px;
+}
+
+.navbar{
+    padding: 0; 
+}
+
+.me-auto {
+    margin: 500px;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: darkgrey;
+}
+
+.navbar-nav a.active{
+    color: 0,0,0;
+}
+.navbar-nav a:hover{
+    color: rgb(155, 204, 223);
+    font-weight: bold;
+}
+
+img{
+    width: 40px;
+}
+
+
+
+
