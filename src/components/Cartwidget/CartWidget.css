@@ -6,7 +6,10 @@ span{
     font-size: 12px;
 }
 
-.number{
-    color:rgb(230, 35, 48);
+.cart-widget{
+    color: darkgrey;
+}
+.cart-widget:hover{
+    color: rgb(155, 204, 223);
     font-weight: bold;
 }

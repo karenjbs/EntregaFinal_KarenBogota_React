@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from "react";
 import { Item } from "../components/Item/Item"
 import { ItemCount } from "../components/Itemcount/ItemCount";
 import { Loader } from "../components/Loader/Loader";
-import { getBooks } from "../lib/products.requests";
+import { getBook } from "../lib/products.requests";
 import { useNavigate, useParams } from "react-router-dom";
 import { useCartContext } from "../state/Cart.context";
 import "./Detail.css";
@@ -15,7 +15,7 @@ export const Detail = () => {
   const { addProduct, itemInCart } = useCartContext();
 
   useEffect(() => {
-    getBooks(id).then((res) => {
+    getBook(id).then((res) => {
       if(!res) return navigate('/');
       setProduct(res);
     });
@@ -23,12 +23,12 @@ export const Detail = () => {
 
   const handleAdd = useCallback(
     (qty) => {
-      addProduct(book, qty);
+      addProduct(product, qty);
     },
-    [addProduct, book]
+    [addProduct, product]
   );
 
-  if (!Object.keys(book).length) return <Loader />;
+  if (!Object.keys(product).length) return <Loader />;
 
   return (
     <div className="container">

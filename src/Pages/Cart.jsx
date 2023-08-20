@@ -5,6 +5,7 @@ import { addOrder } from "../lib/orders.requests";
 import { updateManyBooks } from "../lib/products.requests";
 import { Input} from "../components/Input/Input";
 import { LocaleString } from "../components/LocaleString.jsx/LocaleString";
+import "./Cart.css";
 
 const BUY_FORM = [
   { label: "Nombre", name: "name", placeholder: "Escribe tu nombre" },
@@ -62,17 +63,17 @@ export const Cart = () => {
             </div>
             <div className="cart__products">
               <div
-                className="cart__item"
+                className="cart__item__uno"
                 style={{ border: "none", padding: "0 16px" }}
               >
                 <span>Producto</span>
-                <span>Cantidad</span>
-                <span>Precio</span>
+                <span className="titulo_uno">Cantidad</span>
+                <span >Precio</span>
                 <span>Subtotal</span>
               </div>
               {cart.map((item) => (
-                <div className="cart__item" key={item.id}>
-                  <span>{item.title}</span>
+                <div className="cart__item__dos" key={item.id}>
+                  <span >{item.title}</span>
 
                   <span>{item.qty}</span>
                   <LocaleString num={item.price} />
@@ -97,7 +98,7 @@ export const Cart = () => {
                 <Input key={input.name} onChange={handleChange} {...input} />
               ))}
               <button
-                className="cart__item-button form__button"
+                className="form__button"
                 onClick={createOrder}
               >
                 Realizar pedido

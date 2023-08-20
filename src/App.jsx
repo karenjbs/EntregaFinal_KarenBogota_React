@@ -1,9 +1,6 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements, } from "react-router-dom";
 import "./App.css";
 import {NavBar} from "./components/Navbar/NavBar";
-import ItemListContainer from "./components/Itemlistcontainer/ItemListContainer";
-import {Item} from "./components/Item/Item";
-import {ItemCount} from "./components/Itemcount/ItemCount";
 import { Detail } from "./Pages/Detail";
 import { Home } from "./Pages/Home";
 import { Category } from "./Pages/Category";

@@ -3,8 +3,8 @@ export const LocaleString = ({ num }) => {
       <span>
         $
         {num.toLocaleString("es-CO", {
-          maximumFractionDigits: 2,
-          minimumFractionDigits: 2,
+          maximumFractionDigits: 3,
+          minimumFractionDigits: 3,
         })}
       </span>
     );

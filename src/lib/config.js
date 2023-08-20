@@ -1,14 +1,13 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-//process.env.VAR
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FBS_API_KEY,
-  authDomain: import.meta.env.VITE_FBS_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FBS_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FBS_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FBS_SENDER_ID,
-  appId: import.meta.env.VITE_FBS_APP_ID,
+  apiKey: "AIzaSyBCXP9WHEYWPz-UzADdNgNCPRkWKy1nofU",
+  authDomain: "perfumeria-9d531.firebaseapp.com",
+  projectId: "perfumeria-9d531",
+  storageBucket: "perfumeria-9d531.appspot.com",
+  messagingSenderId: "389517617261",
+  appId: "1:389517617261:web:fa994f51bcec78b3c7b764"
 };
 
 const app = initializeApp(firebaseConfig);

@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {CartWidget} from "../Cartwidget/CartWidget";
@@ -9,17 +10,25 @@ import "./NavBar.css";
 export const NavBar = () => {
   return (
     <>
-      <Navbar>
-        <Container>
-          <NavLink to="/"><img src="https://cdn-icons-png.flaticon.com/512/4120/4120941.png" alt="" /></NavLink>
+   
+    <Navbar expand="lg" className="bg-body">
+      <Container>
+      <NavLink to="/"><img src="https://cdn-icons-png.flaticon.com/512/4120/4120941.png" alt="" /></NavLink>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Nav className="me-auto">
-          <NavLink to={"/category/citrico"}>Citrico</NavLink>
-            <NavLink to={"/category/floral"}>Floral</NavLink>
-            <NavLink to={"/category/amaderado"}>Amaderado</NavLink>
+
+          <Nav.Link href="#nosotros">Nosotros</Nav.Link>
+            <Nav.Link href="#productos">Productos</Nav.Link>
+            <Nav.Link href="#contacto">Contacto</Nav.Link>
+
+            <NavDropdown title="Categorias" id="basic-nav-dropdown">
+              <NavLink className="titulo" to={"/category/citrico"}>Citrico</NavLink>
+              <NavLink className="titulo" to={"/category/floral"}>Floral</NavLink>
+              <NavLink className="titulo" to={"/category/amaderado"}>Amaderado</NavLink>
+            </NavDropdown>
+        
           </Nav>
-          <div className="navbar-nav nav-link">
-          <NavLink href="#Carrito"><CartWidget/></NavLink>
-          </div>
+          <CartWidget />
         </Container>
       </Navbar>
 
